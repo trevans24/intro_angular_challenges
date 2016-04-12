@@ -41,25 +41,25 @@
       Finally, let's create our first controller (js/app.js):</br>
 <pre class="text-danger">
 var app = angular.module("appTwo", []);
-app.controller("welcomeController", welcomeController)
+app.controller("WelcomeController", WelcomeController)
 
-function welcomeController(){
+function WelcomeController(){
   this.full_name = "YOUR NAME"; // change me
 }
 </pre>
     </li>
     <li>
       You should see your name displayed:
-      <span data-ng-controller="welcomeController as your">
+      <span data-ng-controller="WelcomeController as your">
         {{ your.full_name }}
       </span>
       </br>
     </li>
     <li>
-    Before doing the exercises, can you find where the below <code>welcomeController</code> code is referenced in the html?</br>
+    Before doing the exercises, can you find where the below <code>WelcomeController</code> code is referenced in the html?</br>
     (This is the glue that links your controller to your view!)
 <pre class="text-danger">
-&lt;div data-ng-controller="welcomeController as welcome"&gt;
+&lt;div data-ng-controller="WelcomeController as welcomeCont"&gt;
   &lt;!-- the magic happens in here --&gt;
 &lt;div&gt;
 </pre>
@@ -71,27 +71,27 @@ function welcomeController(){
   <br>
 
 
-  <div data-ng-controller="welcomeController as welcome">
+  <div data-ng-controller="WelcomeController as welcomeCont">
     <section class="exercises">
       <h4>Exercise #1</h4>
       Here's some info about me:
-      <!-- HINT: put your answers in the welcomeController!  -->
+      <!-- HINT: put your answers in the WelcomeController!  -->
       <ol>
         <li>
-          Hello! My name is: {{ welcome.full_name }}
+          Hello! My name is: {{ welcomeCont.full_name }}
         </li>
         <li>
-          I am {{ welcome.age || "?" }} years old
+          I am {{ welcomeCont.age || "?" }} years old
         </li>
         <li>
-          I grew up in {{ welcome.city || "???" }}, {{ welcome.state || "??" }}
+          I grew up in {{ welcomeCont.city || "???" }}, {{ welcomeCont.state || "??" }}
         </li>
         <li>
           There are {{ "?" }} letters in my name
         </li>
         <li>
           <!-- HINT: create a 'shout' function in your controller! -->
-          {{ welcome.full_name }} in uppercase with an exclamation point is {{ welcome.shout(welcome.full_name) }}
+          {{ welcomeCont.full_name }} in uppercase with an exclamation point is {{ welcomeCont.shout(welcomeCont.full_name) }}
         </li>
       </ol>
     </section>
