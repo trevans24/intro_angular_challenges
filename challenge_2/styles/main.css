@@ -16,3 +16,9 @@ blockquote {
   padding: 10px;
   border: 1px solid gray;
 }
+
+.bigcheckbox {
+  margin: 10px;
+  transform: scale(1.5);
+  padding: 10px;
+}
