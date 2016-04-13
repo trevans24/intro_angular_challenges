@@ -101,18 +101,19 @@ function WelcomeController(){
     </section>
   </div>
 
-  <div id="add-your-controller"> <!-- HINT: Wrap this exercise in a new controller -->
+  <div ng-controller="CohortController as cohortCtrl" id="add-your-controller"> <!-- HINT: Wrap this exercise in a new controller -->
     <section class="exercises">
       <h4>Exercise #2:</h4>
       <p>Can you create a second controller for this exercise and then dynamically fill in the blanks?</p>
       <p>Describe your WDI class:</p>
       <ol>
-        <li>Class Name: {{ "class_name" }}</li>
-        <li>Students: {{ "enrolled_students" }}</li>
-        <li>Start: {{ "start_date" }}</li>
-        <li>End: {{ "end_date" }}</li>
+        <li>Class Name: {{ cohortCtrl.class_name }}</li>
+        <li>Students: {{ cohortCtrl.enrolled_students }}</li>
+        <li>Total Students: {{ cohortCtrl.enrolled_students.length }}</li>
+        <li>Start: {{ cohortCtrl.start_date }}</li>
+        <li>End: {{ cohortCtrl.end_date }}</li>
         <!-- HINT: Create a daysRemaining() function in your controller that calculate this -->
-        <li>Days Left: {{ "daysRemaining()" }}</li>
+        <li>Days Left: {{ cohortCtrl.daysRemaining() }}</li>
       </ol>
     </section>
   </div>
