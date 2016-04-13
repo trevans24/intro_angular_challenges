@@ -34,14 +34,9 @@
   <br>
 
   <h4 class="text-center" ng-class="'great-success'">
+      <!-- you don't need to edit this; it'll change when you get angular setup correctly -->
       {{ "Angular isn't working!".replace("isn't", "is") }}
   </h4>
-
-  <blockquote>
-    You can think of logic inside double curly braces</br>
-    as being like the <code>&lt;%= "clownhats" + "sprinkles" %&gt;</code></br>
-    from erb templates in rails!
-  </blockquote>
 
   <br>
   <br>
@@ -49,15 +44,24 @@
   <section class="exercises">
 
     <h4>Exercises</h4>
-    Fill in the blanks:
+    Fill in the blanks with the code on the left:
     <!-- HINT: copy the code on the left into the curly braces {{ ... }} on the right  -->
-
+    <!--       the first one is done for you! -->
     <ol>
       <li>
-        <code>1 + 1</code> = {{ "?" }}
+        <code>1 + 1</code> = {{ 1 + 1 }}
+      </li>
+      <li>
+        <code>2 + 2</code> = {{ "?" }}
       </li>
       <li>
         <code>"hello" + "world"</code> = {{ "?" }}
+      </li>
+      <li>
+        <code>"x marks the spot"[0]</code> = {{ "?" }}
+      </li>
+      <li>
+        <code>"ANGULAR".toLowerCase()</code> = {{ "?" }}
       </li>
       <li>
         <code>["a","b","c"]</code> = {{ "?" }}
@@ -73,6 +77,9 @@
       </li>
       <li>
         <code>null</code> = {{ "?" }}
+      </li>
+      <li>
+        <code>{key: "value"}</code> = {{ "?" }}
       </li>
     </ol>
 
