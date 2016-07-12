@@ -26,3 +26,9 @@ You will need to make changes in `index.html` and `app.js`.
     * Play with view-models (ng-model)
     * Create a simple calculator
     * Create a loan interest calculator
+
+
+
+## Licensing
+All content is licensed under a CC­BY­NC­SA 4.0 license.
+All software code is licensed under GNU GPLv3. For commercial use or alternative licensing, please contact legal@ga.co.
