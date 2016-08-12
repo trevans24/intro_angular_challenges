@@ -10,7 +10,6 @@
   <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <!-- add Angular javascript here -->
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.9/angular.js"></script> -->
   <script src="js/app.js"></script>
 </head>
 <body>
@@ -19,7 +18,7 @@
   <ol>
     <li>
       Copy paste the follwing script tag into the &lt;head&gt; tag:</br>
-      <code>&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.9/angular.js"&gt;&lt;/script&gt;</code>
+      <code>&lt;script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"&gt;&lt;/script&gt;</code>
     </li>
     <li>
       Add the attribute "ng-app" to the html tag, like so:</br>
@@ -27,7 +26,7 @@
     </li>
     <li>
       You should see a nasty error message in your console now: </br>
-      <span class="text-danger">Failed to instantiate module appThree...</span></br>
+      <span class="text-danger">Uncaught Error: [$injector:modulerr]</span></br>
       Let's add the following code to make it go away (js/app.js): </br>
       <code>
         var app = angular.module("appThree", []);
